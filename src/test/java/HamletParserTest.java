@@ -41,9 +41,23 @@ public class HamletParserTest {
 
     @Test
     public void testFindHoratio() {
+        //given
+        hamletParser.changeHoratioToTariq();
+        boolean expected = false;
+        //when
+        boolean actual = hamletParser.findHoratio();
+        //then
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testFindHamlet() {
+        //given
+        hamletParser.changeHamletToLeon();
+        boolean expected = false;
+        //when
+        boolean actual = hamletParser.findHamlet();
+        //then
+        Assert.assertEquals(expected, actual);
     }
 }
