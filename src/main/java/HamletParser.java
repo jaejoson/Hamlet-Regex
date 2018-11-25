@@ -1,13 +1,16 @@
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by thook on 10/7/15.
  */
 public class HamletParser {
-
     private String hamletData;
+    private Pattern pattern;
+    private Matcher matcher;
 
     public HamletParser(){
         this.hamletData = loadFile();
@@ -36,4 +39,19 @@ public class HamletParser {
         return hamletData;
     }
 
+    public String changeHamletToLeon() {
+        return null;
+    }
+
+    public boolean findHamlet() {
+        return false;
+    }
+
+    public boolean findHoratio() {
+        return false;
+    }
+
+    public void changeHoratioToTariq() {
+
+    }
 }
